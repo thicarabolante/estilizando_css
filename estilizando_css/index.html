@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling with CSS Activity</title>
+    <style>
+        
+        body {
+            background-color: #f0f8ff; 
+            font-size: 16px; 
+            line-height: 1.6; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container {
+            max-width: 800px; 
+            margin: 20px; 
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+        
+        figure {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            margin: 0;
+        }
+
+        figure img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        figcaption {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        
+        /* Tipografia e cor */
+        h1, h2 {
+            font-family: 'Georgia', serif; 
+            color: #333; 
+        }
+        
+        a:link{
+            color: #0066cc; /* Cor dos links */
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #003366; /* Alterações instantâneas para os links ao passar o mouse */
+        }
+
+        
+        
+        
+        img {
+            border: 5px solid #ccc; /* Adicione uma borda */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); /* Adicione sombra para um efeito lifting */
+            max-width: 100%; 
+            height: auto;
+        }
+
+        .large {
+            max-width: 250px; /* Tamanho máximo para a imagem com a classe .large */
+            width: 70%; 
+            height: auto; 
+        
+        ul {
+            list-style: none; 
+            padding: 0;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <figure>
+        <img src="Lua.jpg" >
+        
+    </figure>
+
+    <div class="container">
+        <header>
+            <h1>Bem vindo à minha página</h1>
+            <p>Esta é uma apresentação rápida sobre mim.</p>
+        </header>
+        <main>
+            <section>
+                <h2>Sobre mim</h2>
+                <p>Meu nome é Thiago Carabolante, eu sou desenvolvedor front-end, e moro em Ribeirão Preto. Eu amo criar nova páginas interativas, com boa experiência do usuário. No meu tempo livre eu vou a academia e aproveito pra tomar um café no shopping.</p>
+                <img src="Thiago.jpeg" alt="imagem de Thiago" class="large">
+                
+            </section>
+            <section>
+                <h2>Meus livros favoritos</h2>
+                <ul>
+                    <li><a href="https://www.google.com.br/books/edition/Sapiens_Hist%C3%B3ria_Breve_da_Humanidade/NZZWEAAAQBAJ?hl=pt-BR&gbpv=1&printsec=frontcover">Sapiens: Uma breve história da humanidade</a> por Yuval Harari</li>
+                    <li><a href="https://www.google.com.br/books/edition/Homo_Deus/MGAlDQAAQBAJ?hl=pt-BR&gbpv=1&printsec=frontcover"> Homo Deus: Uma breve história do amanhã</a> por Yuval Harari</li>
+               
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 por Thiago Carabolante. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
